@@ -4,13 +4,13 @@ import { getDatabase, ref, onValue, set, push, update } from "firebase/database"
 
 // ─── PASTE YOUR FIREBASE CONFIG HERE ───────────────────────────────────────
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyBkoy-GmCN34UNRDpeu6i7twq9nAK668ik",
+  authDomain: "ipl-predictor-994a8.firebaseapp.com",
+  projectId: "ipl-predictor-994a8",
+  storageBucket: "ipl-predictor-994a8.firebasestorage.app",
+  messagingSenderId: "935308129716",
+  appId: "1:935308129716:web:8c57b699f7d57451bf2ee1",
+  measurementId: "G-FF6YMYCQFB"
 };
 // ────────────────────────────────────────────────────────────────────────────
 
