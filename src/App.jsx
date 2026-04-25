@@ -3,10 +3,11 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, onValue, set, push, update } from "firebase/database";
 
 // ─── PASTE YOUR FIREBASE CONFIG HERE ───────────────────────────────────────
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyBkoy-GmCN34UNRDpeu6i7twq9nAK668ik",
   authDomain: "ipl-predictor-994a8.firebaseapp.com",
-  databaseURL: "https://ipl-predictor-994a8-default-rtdb.firebaseio.com",
+  databaseURL: "https://ipl-predictor-994a8-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "ipl-predictor-994a8",
   storageBucket: "ipl-predictor-994a8.firebasestorage.app",
   messagingSenderId: "935308129716",
