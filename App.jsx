@@ -205,15 +205,15 @@ export default function App() {
                   <div style={s.label}>Today's Match</div>
                   <div style={{ fontSize: 13, color: "#64748b", marginBottom: 4 }}>{activeMatch.label} • {activeMatch.date}</div>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 20, margin: "20px 0" }}>
-                    {[activeMatch.team1, activeMatch.team2].map((code, i) => (
-                      <>
-                        {i === 1 && <div style={{ fontSize: 18, color: "#475569" }}>vs</div>}
-                        <div key={code} style={{ textAlign: "center" }}>
-                          <div style={{ fontSize: 30, fontWeight: "bold", color: teamMap[code]?.accent || "#fff" }}>{code}</div>
-                          <div style={{ fontSize: 10, color: "#64748b", maxWidth: 90 }}>{teamMap[code]?.name}</div>
-                        </div>
-                      </>
-                    ))}
+                    <div style={{ textAlign: "center" }}>
+                      <div style={{ fontSize: 30, fontWeight: "bold", color: teamMap[activeMatch.team1]?.accent || "#fff" }}>{activeMatch.team1}</div>
+                      <div style={{ fontSize: 10, color: "#64748b" }}>{teamMap[activeMatch.team1]?.name}</div>
+                    </div>
+                    <div style={{ fontSize: 18, color: "#475569" }}>vs</div>
+                    <div style={{ textAlign: "center" }}>
+                      <div style={{ fontSize: 30, fontWeight: "bold", color: teamMap[activeMatch.team2]?.accent || "#fff" }}>{activeMatch.team2}</div>
+                      <div style={{ fontSize: 10, color: "#64748b" }}>{teamMap[activeMatch.team2]?.name}</div>
+                    </div>
                   </div>
                 </div>
 
